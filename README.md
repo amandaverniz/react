@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Como enviar um repositório no GitHub
+Primeiro é necessário ter instalado o __GIT__ no computador.
+Em seguida, instalar o __GitHub Desktop__ para facilitar o envio.
 
-## Getting Started
+## Como criar o repositório
+Para criar um repositório novo e enviar para o GitHub, faça:
+1. Abrir o __CMD__ na pasta desejada e rodar o comando `git init`
+- Lembrar de excluir a pasta __.git__ se já houver nos itens ocultos.
 
-First, run the development server:
+2. No GitHub Desktop, ir na opção __Add existing...__ e selecionar a pasta do projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3. Escrever algo no _Summary_, cliqar em __commit__ e depois __Publish__
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+__ATENÇÃO__: lembrar de deixar _público_, desmarcando a opção _"keep this code private"_
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Como criar um projeto em React com NextJs
+Para criar um novo projeto em React usando o NextJs:
+1. Abra o __cmd__ na pasta desejada e rode o comando: `npx create-next-app`
+2. Marque para __não__ usar _TypeScript_. Os demais deixe padrão.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para rodar um projeto em React basta rodae o comando `npm run dev` no cmd
