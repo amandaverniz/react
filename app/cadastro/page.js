@@ -8,20 +8,20 @@ export default function Cadastro() {
     const [nome, alteraNome] = useState("");
     const [mensagem, alteraMensagem] = useState("");
 
-    // Função para enviar a mensagem
+    // Testando um teste com uma testada
     function enviaMensagem(e) {
         e.preventDefault();
 
         if (mensagem === "" || nome === "") {
-            toast.error("Por favor, preencha todos os campos.");  // Exibe erro
+            toast.error("Por favor, preencha todos os campos.");  
         } else {
-            toast.success("Mensagem enviada com sucesso!");  // Exibe sucesso
-            alteraNome("");  // Reseta o nome
-            alteraMensagem("");  // Reseta a mensagem
+            toast.success("Mensagem enviada com sucesso!");  
+            alteraNome("");  
+            alteraMensagem(""); 
         }
     }
 
-    // Função para notificação simples (exemplo)
+   
     const notify = () => toast("Wow, so easy!");
 
     return (
@@ -63,10 +63,10 @@ export default function Cadastro() {
                 <button type="submit">Enviar</button>
             </form>
 
-            {/* Botão para disparar notificação */}
+          
             <button onClick={notify}>Notify!</button>
 
-            {/* Componente que renderiza as notificações */}
+            
             <ToastContainer />
         </div>
     );
