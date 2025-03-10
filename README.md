@@ -18,4 +18,4 @@ Para criar um novo projeto em React usando o NextJs:
 1. Abra o __cmd__ na pasta desejada e rode o comando: `npx create-next-app`
 2. Marque para __não__ usar _TypeScript_. Os demais deixe padrão.
 
-Para rodar um projeto em React basta rodae o comando `npm run dev` no cmd
+Para rodar um projeto em React basta rodar o comando `npm run dev` no cmd
