@@ -12,7 +12,7 @@ export default function Cadastro() {
     function enviaMensagem(e) {
         e.preventDefault();
 
-        if (mensagem === "" || nome === "") {
+        if (mensagem == "" || nome == "") {
             toast.error("Por favor, preencha todos os campos.");  
         } else {
             toast.success("Mensagem enviada com sucesso!");  
