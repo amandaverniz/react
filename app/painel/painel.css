@@ -1,5 +1,11 @@
 .erro{
-    color: lightpink;
+    color: white;
     background: darkred;
+    padding: 10px;
+}
+
+.sucesso{
+    color: white;
+    background: green;
     padding: 10px;
 }

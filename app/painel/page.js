@@ -7,11 +7,21 @@ function Painel() {
     const [usuario, alteraUsuario] = useState("")
     const [ senha, alteraSenha] = useState ("")
     const [ mostraerro, altera_mostraerro] = useState(false)
+    const [ mostrasucesso, altera_mostrasucesso] = useState (false)
 
     function validarLogin(){
-        if(usuario == amandavv && senha == 123456){
-
+        if(usuario == "amandavv" && senha == 123456){
+            altera_mostraerro(false)
+            altera_mostrasucesso(true)
+        }else if(usuario== "" && senha == ""){
+            altera_mostraerro(false)
+           altera_mostrasucesso(false)
+        }else{
+            altera_mostraerro(true)
+            altera_mostrasucesso(false)
         }
+        
+        
     }
     return ( 
         <div>
@@ -53,6 +63,15 @@ function Painel() {
                 mostraerro == true ?  
                     <div className="erro">
                         <p>Usuário ou senha incorretos</p>
+                    </div>
+                :
+                <div></div>
+            }
+
+{ 
+                mostrasucesso == true ?  
+                    <div className="sucesso">
+                        <p>Usuário logado com sucesso</p>
                     </div>
                 :
                 <div></div>
