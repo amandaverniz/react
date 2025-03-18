@@ -1,6 +1,8 @@
 'use client'
 import { useState } from "react";
 import "./painel.css"
+import Produtos from "../produtos/page";
+import Menu from "../produtos/components/Menu";
 
 function Painel() {
 
@@ -25,7 +27,10 @@ function Painel() {
     }
     return ( 
         <div>
+            
+            <Menu/>
             <h1>Painel administrativo</h1>
+
 
             <br/>
 

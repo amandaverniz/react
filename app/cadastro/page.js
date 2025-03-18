@@ -3,6 +3,7 @@ import { useState } from "react";
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';  
 import 'react-toastify/dist/ReactToastify.css'; 
+import Menu from "../produtos/components/Menu";
 
 export default function Cadastro() {
     const [nome, alteraNome] = useState("");
@@ -25,7 +26,9 @@ export default function Cadastro() {
     const notify = () => toast("Wow, so easy!");
 
     return (
-        <div>
+       
+       <div>
+        <Menu/>
             {/* Formulário de contato */}
             <h1>Página de contato</h1>
             <br />
